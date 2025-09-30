@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profiles Registration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <h1 class="heading">Student Registration</h1>
+  <p class="body-text">Fill in the form to register and see your profile dynamically appear below. All fields marked * are required.</p>
+</header>
+
+<main>
+  <!-- Registration Form -->
+  <form id="registration-form" novalidate>
+    <label for="firstName">First Name *</label>
+    <input type="text" id="firstName" name="firstName" required />
+    <span class="error" id="firstNameError" aria-live="polite"></span>
+
+    <label for="lastName">Last Name *</label>
+    <input type="text" id="lastName" name="lastName" required />
+    <span class="error" id="lastNameError" aria-live="polite"></span>
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required />
+    <span class="error" id="emailError" aria-live="polite"></span>
+
+    <label for="programme">Programme *</label>
+    <input type="text" id="programme" name="programme" required />
+    <span class="error" id="programmeError" aria-live="polite"></span>
+
+    <label for="year">Year *</label>
+    <select id="year" name="year" required>
+      <option value="">Select Year</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+    <span class="error" id="yearError" aria-live="polite"></span>
+
+    <label for="interests">Interests</label>
+    <input type="text" id="interests" name="interests" placeholder="Optional"/>
+
+    <label for="photo">Photo URL</label>
+    <input type="url" id="photo" name="photo" placeholder="Optional"/>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- Feedback for form submission -->
+  <div id="feedback" aria-live="polite"></div>
+
+  <!-- Search bar to filter profiles -->
+  <input type="text" id="search" placeholder="Search profiles..." aria-label="Search profiles">
+
+  <!-- Profile Cards Container -->
+  <div id="profile-cards" class="container"></div>
+
+ <P1>Click here for <a href="summary.html" Table <a></P1>
+</main>
